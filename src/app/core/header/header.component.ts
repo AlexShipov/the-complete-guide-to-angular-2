@@ -3,8 +3,9 @@ import { Subscription } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 
-import { RecipeService } from '../recipes/recipe.service';
-import { AuthService } from '../auth/auth.service';
+import { RecipeService } from '../../recipes/recipe.service';
+import { AuthService } from '../../auth/auth.service';
+
 
 @Component({
   selector: 'app-header',

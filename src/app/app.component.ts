@@ -8,12 +8,8 @@ import '@firebase/auth';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  loadedFeature = 'recipe';
 
-  onNavigate(feature: string) {
-    this.loadedFeature = feature;
-  }
-
+  
   ngOnInit() {
     firebase.initializeApp({
       apiKey: 'AIzaSyCFa7zfHOl5CYFHKZ8Mgr2R9URa8vb6Fc0',
