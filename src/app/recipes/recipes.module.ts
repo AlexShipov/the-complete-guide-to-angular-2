@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SharedModule } from '../shared/shared.module';
 import { RecipesComponent } from './recipes.component';
@@ -24,7 +23,7 @@ import { RecipesRoutingModule } from './recipes-routing.module';
   ],
   imports: [
     CommonModule,
-    BrowserAnimationsModule,
+    //BrowserAnimationsModule,
     ReactiveFormsModule,
     RecipesRoutingModule,
     SharedModule
