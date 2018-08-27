@@ -4,8 +4,8 @@ import { tap } from 'rxjs/operators';
 
 import { Recipe } from './recipe.model';
 import { Ingredient } from '../shared/ingredient.model';
-import { ShoppingListService } from '../shopping-list/shopping-list.service';
 import { DataStorageService } from '../shared/data-storage.service';
+
 
 @Injectable({
   providedIn: 'root'
@@ -32,9 +32,7 @@ export class RecipeService {
       ])
   ];
 
-  constructor(
-    private slService: ShoppingListService,
-    private dataStorageSvc: DataStorageService) { }
+  constructor(private dataStorageSvc: DataStorageService) { }
 
   getRecipes() {
     return this.recipes.slice();
@@ -42,10 +40,6 @@ export class RecipeService {
 
   getRecipe(id: number) {
     return this.recipes[id];
-  }
-
-  addIngredientsToShoppingList(ingredients: Ingredient[]) {
-    this.slService.addIngredients(ingredients);
   }
 
   addRecipe(recipe: Recipe) {

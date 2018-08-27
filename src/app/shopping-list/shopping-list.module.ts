@@ -6,9 +6,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { ShoppingListComponent } from './shopping-list.component';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
 
-const routes: Routes = [
-  { path: '', component: ShoppingListComponent }
-];
+//const routes: Routes = [
+//  { path: '', component: ShoppingListComponent }
+//];
 
 @NgModule({  
   declarations: [
@@ -17,8 +17,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    FormsModule,
-    RouterModule.forChild(routes)
+    FormsModule
   ],
   exports: []
 })
